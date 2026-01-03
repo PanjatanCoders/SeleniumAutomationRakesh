@@ -26,6 +26,8 @@ public class DemoVariable {
     }
 }
 
+//added a comment
+
 
 // length of variable: 4-16char recommendate(meaningful name)
 // Wrapper class
