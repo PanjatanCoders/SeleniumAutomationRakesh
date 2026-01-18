@@ -1,4 +1,4 @@
-package com.ibm;
+package com.ibm.primitive;
 
 public class OperatorsDemo {
     static void main() {
