@@ -31,7 +31,7 @@ void stringOperations() {
 }
 
 void stringBasic() {
-    String a = "hello"; // literal way
+    String a = "hello"; // literal way --> SCP(String Constant Pool)
     String b = "hello";
     String c = new String("hello"); //interned/object
     String d = a;
