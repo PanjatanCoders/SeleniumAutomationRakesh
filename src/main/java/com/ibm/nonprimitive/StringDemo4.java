@@ -4,6 +4,7 @@ public class StringDemo4 {
     static void main() {
         String str = "Welcome to Java Programming Language.";
 
+
         String[] strArr = str.split(" ");
         String finalString = "";
         for (String s : strArr) {
