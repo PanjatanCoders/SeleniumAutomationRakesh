@@ -9,7 +9,8 @@ public class ArrayListDemo {
 //        demo2();
         demo3();
     }
-
+// array : [index]
+//    arrayList: get(index)
     static void demo3() {
         ArrayList<String> arrayList = new ArrayList<>();
         arrayList.add("Java");
@@ -24,6 +25,7 @@ public class ArrayListDemo {
         arrayList.addFirst("TestNG");
         System.out.println(arrayList);
         System.out.println(arrayList.contains("TestNG"));
+        System.out.println(arrayList.get(10));
     }
     static void demo2 () {
         ArrayList<String> arrayList = new ArrayList<>();
