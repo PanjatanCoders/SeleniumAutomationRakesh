@@ -1,0 +1,13 @@
+Css:
+-----------
+1. by using id: #<id value>
+2. by using class: .<class value>
+3. by attributes: tagName[attributeName='attribute value']
+4. by tagname: tagname
+5. tag + id: format: tagname#id_value [example: input#email]
+6. tag + className: tagname.<class_value>
+7. multiple attribute: textarea[name='bio'][placeholder='Tell us about yourself']
+8. parent > child: #loginForm > button
+9. start-with: div[id^='loginAlert']
+10. ends-with: div[id$='loginAlert']
+11. contains: div[id*='loginAlert']
