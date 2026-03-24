@@ -11,3 +11,40 @@ Css:
 9. start-with: div[id^='loginAlert']
 10. ends-with: div[id$='loginAlert']
 11. contains: div[id*='loginAlert']
+------------------------------------
+XPATH:(XML Path)
+    - Absolute(root -> target) (html/body/div/table)
+    - Relative
+
+   - Basic format:
+     - //tagname[@attribute_name='attribute_value']
+     - //tagname[text()='text_value']
+     - //tagname[.='text_value']
+
+     ---
+     Example:
+        - //input[@placeholder='Enter username']
+        multiple attribute:
+        - //input[@placeholder='Enter username'][@id='username']
+        - //input[@placeholder='Enter username' and @id='username']
+        - //input[@id='b_username' or @id='p_username']
+        attribute with text
+        - //label[@for='username' and text()='Username:']
+        - //label[@for='username' and .='Username:']
+
+        Start-with()
+         - //p[starts-with(text(), 'Please enter your userna')]
+         - //p[starts-with(., 'Please enter your userna')]
+         ends-with()
+        //p[ends-with(text(), 'd password to login.')]
+        contains():
+         - //p[contains(text(), 'ername and passw')] -- with text
+         - //input[contains(@placeholder, 'er pas')]  -- with attribute
+
+        // Any attibute/tag
+         - //input[@*='username']
+         - //*[text()='Login']
+
+        Indexing in XPATH:
+         - //div[@class='checkbox-item'][2]
+         - (//input[@type='text'])[1]
