@@ -48,3 +48,16 @@ XPATH:(XML Path)
         Indexing in XPATH:
          - //div[@class='checkbox-item'][2]
          - (//input[@type='text'])[1]
+        ----------------------------------------
+        Relations: Parent, child, siblings, following, preceding
+        - //tbody[@id='tableBody']/parent::table
+        - //tbody[@id='tableBody']/child::tr[1]
+        - //tbody[@id='tableBody']/child::tr[1]/td[2]/following-sibling::td[2]
+        - //tbody[@id='tableBody']/child::tr[1]/td[2]/preceding-sibling::td[1]
+        - //tbody[@id='tableBody']/ancestor::div
+        - //tbody[@id='tableBody']/descendant::tr
+        --------------------------------------------------------
+        - //section[@id='forms']/following::input
+        - //input[@id='volumeSlider']/preceding::input
+
+
