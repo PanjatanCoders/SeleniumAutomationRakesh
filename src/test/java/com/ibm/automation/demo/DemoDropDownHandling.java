@@ -36,6 +36,7 @@ public class DemoDropDownHandling {
         for (WebElement ddValue : ddValues) {
             System.out.println(ddValue.getText());
         }
+//        DB library
 
         Thread.sleep(2000);
         driver.quit();

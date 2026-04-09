@@ -12,14 +12,16 @@ public class BaseTest {
         driver.get("https://panjatan.netlify.app/");
         driver.manage().window().maximize();
     }
-
-    static public void tearDown(){
-
+    static public void waitTime(int sec) {
         try {
-            Thread.sleep(3000);
+            Thread.sleep(sec  * 1000);
         } catch (InterruptedException e) {
             System.out.println("There is an exception");
         }
+
+    }
+    static public void tearDown(){
+        waitTime(3);
         driver.quit();
     }
 }
