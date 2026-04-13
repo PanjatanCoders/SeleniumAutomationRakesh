@@ -18,3 +18,7 @@ public class ModalWindowHandling extends BaseTest {
         tearDown();
     }
 }
+
+// alert
+// frame
+// window
