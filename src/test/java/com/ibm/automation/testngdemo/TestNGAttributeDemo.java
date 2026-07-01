@@ -1,8 +1,9 @@
 package com.ibm.automation.testngdemo;
 
+import com.ibm.automation.base.BaseTest;
 import org.testng.annotations.*;
 
-public class TestNGAttributeDemo {
+public class TestNGAttributeDemo extends BaseTest {
     @BeforeClass
     static void beforeClass() {
         System.out.println("Before Class");
@@ -14,7 +15,7 @@ public class TestNGAttributeDemo {
     }
 
     @BeforeMethod
-    void beforeMethod() {
+    void beforeMethod1() {
         System.out.println("Before Method");
     }
 
@@ -26,7 +27,7 @@ public class TestNGAttributeDemo {
     @Test(priority = 1, description = "attributeDemoTC001: High level Summary of the Test")
     public void attributeDemoTC001() {
         // test steps
-        System.out.println("Login TC001");
+        System.out.println("Login TC001 from TestNG");
     }
 
 

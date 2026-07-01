@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 import java.util.HashMap;
@@ -12,6 +13,31 @@ import java.util.Map;
 
 public class BaseTest {
     protected static WebDriver driver;
+
+    @BeforeSuite
+    public void beforeSuite() {
+        System.out.println("Before Suite");
+    }
+    @AfterSuite
+    public void afterSuite() {
+        System.out.println("After Suite");
+    }
+
+    @BeforeTest
+    public void beforeTest() {
+        System.out.println("Before Test");
+    }
+
+    @AfterTest
+    public void afterTest() {
+        System.out.println("After Test");
+    }
+
+    @BeforeMethod
+    public void beforeMethod() {
+        System.out.println("Before Method from BaseTest");
+    }
+
 
     static public void setUp() {
         // ChromeOptions myChromeOptions = getChromeoptions();

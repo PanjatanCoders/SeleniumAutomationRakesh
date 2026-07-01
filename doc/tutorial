@@ -1,0 +1,23 @@
+suite
+ - test(auth)
+  - classes
+   - class1(Login)
+        - test1(Test Method)
+        - test2(Test Method)
+   - class2(Register)
+        - test1(Test Method)
+        - test2(Test Method)
+  - test2
+    - classes
+     - class1
+          - test1(Test Method)
+          - test2(Test Method)
+     - class2
+          - test1(Test Method)
+          - test2(Test Method)
+
+-----------------
+@Before
+@After
+@BeforeTest
+@AfterTest

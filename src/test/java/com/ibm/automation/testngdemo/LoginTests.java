@@ -1,8 +1,9 @@
 package com.ibm.automation.testngdemo;
 
+import com.ibm.automation.base.BaseTest;
 import org.testng.annotations.*;
 
-public class LoginTests {
+public class LoginTests extends BaseTest {
     @BeforeClass
     static void beforeClass() {
         System.out.println("Before Class");
@@ -14,7 +15,7 @@ public class LoginTests {
     }
 
     @BeforeMethod
-    void beforeMethod() {
+    void beforeMethod1() {
         System.out.println("Before Method");
     }
 
