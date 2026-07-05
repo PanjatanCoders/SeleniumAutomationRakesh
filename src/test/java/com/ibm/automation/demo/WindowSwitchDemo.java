@@ -29,7 +29,7 @@ public class WindowSwitchDemo extends BaseTest {
 //        driver.findElement(By.xpath("//button[.='Close Window']")).click();
 
 //        perform some action in main window
-//        driver.switchTo().window(mainWindow);
+        driver.switchTo().window(mainWindow);
         System.out.println(driver.findElement(By.xpath("//h3[.='Window Handling']")).getText());
 
 

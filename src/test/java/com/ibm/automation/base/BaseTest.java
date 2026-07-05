@@ -47,7 +47,7 @@ public class BaseTest {
 
         driver.manage().window().maximize();
 //        global wait -applicable to all the find elements
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://panjatan.netlify.app/");
     }
 
