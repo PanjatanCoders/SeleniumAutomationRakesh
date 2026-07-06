@@ -13,11 +13,19 @@ import java.util.Map;
 
 public class BaseTest {
     protected static WebDriver driver;
+    private static String BROWSER;
+    private static String URL;
 
     @BeforeSuite
-    public void beforeSuite() {
+    @Parameters({"browser", "url"})
+    public void beforeSuite(String myBrowser, String url) {
         System.out.println("Before Suite");
+        System.out.println("Browser: " + myBrowser);
+        System.out.println("URL: " + url);
+        BROWSER = myBrowser;
+        URL = url;
     }
+
     @AfterSuite
     public void afterSuite() {
         System.out.println("After Suite");
@@ -43,12 +51,16 @@ public class BaseTest {
         // ChromeOptions myChromeOptions = getChromeoptions();
 
         // driver = new ChromeDriver(myChromeOptions);
-        driver = new ChromeDriver(getChromeoptions());
+        if (BROWSER.equalsIgnoreCase("firefox")) {
+            driver = new FirefoxDriver();
+        } else {
+            driver = new ChromeDriver(getChromeoptions());
+        }
 
         driver.manage().window().maximize();
 //        global wait -applicable to all the find elements
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://panjatan.netlify.app/");
+        driver.get(URL);
     }
 
     private static ChromeOptions getChromeoptions() {

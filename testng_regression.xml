@@ -1,18 +1,22 @@
 <suite name="Automation Suite">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="env" value="beta"/>
+    <parameter name="url" value="https://panjatan.netlify.app/"/>
     <test name="Smoke Tests">
+        <parameter name="TestType" value="Smoke"/>
         <classes>
             <class name="com.ibm.automation.testngdemo.LoginTests"/>
                 <methods>
-<!--                    <include name="loginPositiveTC001"/>-->
-<!--                    <include name="loginPositiveTC002"/>-->
+                    <include name="loginPositiveTC001"/>
+                    <include name="loginPositiveTC002"/>
                     <exclude name="loginNegativeTC003"/>
                 </methods>
 <!--            <class name="com.ibm.automation.testngdemo.AlertHandlingWithTestNG"/>-->
         </classes>
     </test>
-<!--    <test name="Auth Tests">-->
-<!--        <classes>-->
-<!--            <class name="com.ibm.automation.testngdemo.TestNGAttributeDemo"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Auth Tests">
+        <classes>
+            <class name="com.ibm.automation.testngdemo.TestNGAttributeDemo"/>
+        </classes>
+    </test>
 </suite>
