@@ -1,0 +1,9 @@
+development -> build -> deploy -> test -> deploy production -> monitor
+clean -> validate -> compile -> test -> package -> install
+
+apache: 3.9, 4.0 ,
+
+Java: 8, 11, 17
+------------------------
+your project - > Github(Remote)
+Jenkins -> Test Server(VM -> clone git repository) ->

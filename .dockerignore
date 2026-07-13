@@ -1,0 +1,11 @@
+target/
+.git/
+.idea/
+.vscode/
+.claude/
+screenshots/
+doc/
+*.iml
+*.log
+hs_err_pid*
+replay_pid*
