@@ -46,6 +46,7 @@ How the project is built and tests are run.
 Designing a maintainable automation framework.
 
 - [framework_approaches_handbook.md](06-frameworks/framework_approaches_handbook.md) — Framework approaches & how to choose
+- [page_object_model_handbook.md](06-frameworks/page_object_model_handbook.md) — Page Object Model in depth (robustness, components, parallel-safe driver)
 
 ### 07 — DevOps
 Running tests automatically in a delivery pipeline.
